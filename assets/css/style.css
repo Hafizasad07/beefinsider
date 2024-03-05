@@ -36,8 +36,16 @@
     text-align: center;
 }
 
+.section4 img{
+    width: 380px;
+}
+
 .heading img{
     width: 100%;
+}
+
+.fw-bold{
+    font-weight: bold;
 }
 
 .heading2{
@@ -53,6 +61,7 @@
 
 .section1-img1{
     padding-top: 30px;
+    text-align: center;
 }
 
 .section1-paragraph{
@@ -68,6 +77,10 @@ sub {
     font-size: 10px;
 }
 
+.section1-button{
+    text-align: center;
+}
+
 .section1-button a{
     text-decoration: none;
     color: #F65C00;
@@ -78,6 +91,11 @@ sub {
     padding: 12px 20px;
     border-radius: 14px;
     border: 2px solid #F65C00;
+    font-family: ArobiaMedium;
+}
+
+.section5-heading span{
+    font-family: ArobiaMedium;
 }
 
 .section1-button a:hover{
@@ -87,6 +105,11 @@ sub {
 .section2-img{
     text-align: center;
     padding-top: 60px;
+}
+
+.section3-img img,
+.section2-img img{
+    width: 100%;
 }
 
 .section2-heading{
@@ -101,18 +124,24 @@ sub {
 
 .container{
     max-width: 800px;
+    margin: auto;
 }
 
 .section4{
     padding-top: 10px;
 }
 
+.fst-italic{
+    font-style: italic;
+}
+
 .section5-heading{
     color: #F65C00;
-    font-size: 26px;
+    font-size: 24px;
     line-height: normal;
     padding-top: 60px;
     text-align: center;
+    font-family: ArobiaMedium;
 }
 
 .section5-icon{
@@ -129,6 +158,7 @@ sub {
     line-height: normal;
     padding-top: 20px;
     text-align: center;
+    font-family: ArobiaMedium;
 }
 
 .section6{
@@ -169,6 +199,18 @@ sub {
     font-weight: 500;
 }
 
+.footer-para{
+    padding-bottom: 0.25rem !important;
+}
+
+.footer-para.pt-4{
+    padding-bottom: 1.5rem!important;
+}
+
+.footer-icon.p{
+    padding-top: 3rem!important;
+    padding-bottom: 3rem!important;
+}
 .footer-para span a,
 .footer-icon a{
     text-decoration: underline;
@@ -179,11 +221,19 @@ sub {
     max-width: 600px;
     margin: auto;
 }
+
+.flex-div{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
 @media screen and (max-width:767px){
     .heading{
         font-size: 40px;
     }
 
+    .section4 img,
     .heading img,
     .section1-img1{
         width: 100%;
@@ -192,6 +242,12 @@ sub {
     .heading2 {
         font-size: 28px;
     }
+
+    .section4 .flex-div{
+        flex-wrap: wrap;
+        gap: 0px;
+    }
+
 
 }
 
